@@ -1,0 +1,155 @@
+/* Global Color Variables */
+:root {
+    --color-primary-a0: #ffffff;
+    --color-primary-a10: #c5dad0;
+    --color-primary-a20: #8db5a3;
+    --color-primary-a30: #559178;
+    --color-primary-a50: #0b6e4f;
+    --color-primary-a60: #13523c;
+    --color-primary-a70: #133829;
+    --color-primary-a80: #101f18;
+    --color-primary-a90: #000000;
+    --color-gray-medium: linear-gradient(to left, rgba(89, 89, 89, 0.9), rgba(89, 89, 89, 0.9)),
+        linear-gradient(to left, #0b6e4f, #0b6e4f);
+    --primary: #0B6E4F;
+    --black: #010B08;
+    --grey-medium: #515B58;
+    --error: #C0392B;
+
+}
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #080808;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/* Layout */
+* {
+    box-sizing: border-box;
+}
+
+/* .body {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: none;
+    overflow-x: hidden;
+} */
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+}
+
+.container-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', serif;
+    color: #074330;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+
+/* Forms */
+input,
+select,
+textarea {
+    font-family: 'inter', sans-serif;
+    /* display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px; */
+}
+
+/* input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+} */
+
+/* Utilities */
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.hidden {
+    display: none !important;
+}

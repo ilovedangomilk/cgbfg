@@ -1,0 +1,60 @@
+/* RecipeList.css */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primary-a10); /* Soft green background */
+}
+
+li {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--color-primary-a30); /* Greenish border for separation */
+    background-color: var(--color-primary-a0); /* White background */
+    color: var(--color-primary-a70); /* Dark green text */
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: var(--color-primary-a20); /* Slightly darker green on hover */
+    color: var(--color-primary-a0); /* White text on hover */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.recipe-details {
+    padding: 20px;
+    background-color: var(--color-primary-a0); /* White background for the details */
+    border: 1px solid var(--color-primary-a30); /* Subtle border for the recipe details box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.recipe-details h2 {
+    color: var(--color-primary-a50); /* Dark green color for the title */
+}
+
+.recipe-details p {
+    color: var(--grey-medium); /* Medium grey for text */
+    margin: 5px 0;
+}
+
+.recipe-details p strong {
+    color: var(--color-primary-a70); /* Dark green for strong emphasis */
+}
+
+.recipe-card {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

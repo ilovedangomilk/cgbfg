@@ -1,0 +1,18 @@
+.vscode
+.env
+
+# Backend
+be/.venv
+be/.env
+be/scripts/__pycache__
+be/scripts/.env
+
+
+#Frontend
+node_modules
+package.json
+package-lock.json
+frontend_react/node_modules
+frontend_react/package.json
+frontend_react/package-lock.json
+.vercel

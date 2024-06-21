@@ -1,0 +1,57 @@
+h5 {
+    text-align: center;
+    width: 100%;
+}
+
+.imported-list-container,
+.imported-list-item {
+    overflow: hidden;
+
+}
+
+.list-category-label {
+    width: 44px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the emoji inside */
+    flex-shrink: 0;
+}
+
+.list-product-name-weight {
+    flex-grow: 1;
+}
+
+.list-product-name {
+    color: var(--color-primary-a90, #000000);
+    /* Ensure the variable is defined */
+    text-align: left;
+    font-family: var(--title-small-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--title-small-font-size, 16px);
+    line-height: 120%;
+    font-weight: var(--title-small-font-weight, 600);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list-product-weight {
+    color: #6d6d6d;
+    text-align: left;
+    font-family: var(--text-small-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--text-small-font-size, 14px);
+    line-height: 100%;
+    font-weight: var(--text-small-font-weight, 400);
+}
+
+.edit-button,
+.delete-button {
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

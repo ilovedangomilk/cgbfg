@@ -1,0 +1,237 @@
+/* SEARCH SORT FILTER BAR */
+.scrollable-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scrollable-bar .btn {
+    display: inline-block;
+}
+
+.filter-button {
+    color: var(--black);
+    background-color: #EFF1F5;
+    border-radius: 0.75em;
+    padding: 0.4em 1em;
+    outline: none;
+    stroke: none;
+    font-weight: 500;
+}
+
+/* INVENTORY ITEMS */
+.inventory-items-container {
+    padding-top: 16px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    width: 100%;
+}
+
+.inventory-items-container:hover {
+    cursor: pointer;
+}
+
+.state-default-layout-horizontal,
+.state-default-layout-horizontal * {
+    box-sizing: border-box;
+}
+
+.state-default-layout-horizontal {
+    padding: 4px 8px 4px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 320px;
+    position: relative;
+    width: 100%;
+}
+
+.state-default-layout-horizontal.selected {
+    background-color: #B4E0D265;
+    border-radius: 1.25em;
+}
+
+.state-default-layout-horizontal.expired {
+    opacity: 0.5;
+}
+
+.state-default-layout-horizontal.expiring .expiry-date,
+.state-default-layout-horizontal.expiring .expiry-date-counter {
+    color: var(--error);
+}
+
+
+.text-infomation {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.product-title {
+    color: #000000;
+    text-align: left;
+    font-family: var(--title-small-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--title-small-font-size, 16px);
+    line-height: var(--title-small-line-height, 24px);
+    font-weight: var(--title-small-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.product-quantity {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+    color: var(--grey-medium)
+}
+
+.product-units {
+    display: inline-block;
+    color: var(--grey-medium)
+}
+
+.quantity {
+    color: #6d6d6d;
+    text-align: left;
+    font-family: var(--text-small-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--text-small-font-size, 14px);
+    line-height: var(--text-small-line-height, 20px);
+    font-weight: var(--text-small-font-weight, 400);
+    position: relative;
+}
+
+.units {
+    color: #6d6d6d;
+    text-align: left;
+    font-family: var(--text-small-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--text-small-font-size, 14px);
+    line-height: var(--text-small-line-height, 20px);
+    font-weight: var(--text-small-font-weight, 400);
+    position: relative;
+}
+
+.purchase-dates-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.purchase-dates-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+
+.purchase-dates-container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.purchase-date {
+    color: #000000;
+    text-align: left;
+    font-family: var(--text-regular-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--text-regular-font-size, 16px);
+    line-height: var(--text-regular-line-height, 24px);
+    font-weight: var(--text-regular-font-weight, 400);
+    position: relative;
+}
+
+.purchase-date-counter {
+    color: #6d6d6d;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    position: relative;
+}
+
+.expiry-dates-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.expiry-dates-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+
+.expiry-dates {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.expiry-date {
+    color: #000000;
+    text-align: left;
+    font-family: var(--text-regular-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--text-regular-font-size, 16px);
+    line-height: var(--text-regular-line-height, 24px);
+    font-weight: var(--text-regular-font-weight, 400);
+    position: relative;
+}
+
+
+
+.expiry-date-counter {
+    color: #6d6d6d;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    position: relative;
+}

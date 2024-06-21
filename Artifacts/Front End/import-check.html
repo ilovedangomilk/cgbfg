@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import-Check</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    <link rel="stylesheet" href="css/components/button.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <link rel="stylesheet" href="css/pages/import-check.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+
+
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <!-- Imported List -->
+            <h5 style="font-weight:700 ; padding-top: 20px;">Does this look correct?</h5>
+            <h5 style="padding-top:20px">We will import this list into your inventory</h5>
+            <div class="imported-list-container container-col" style="gap: 16px; padding-top: 40px;">
+                <div class="imported-list-item container-row" style="gap:16px">
+                    <div class="list-category-label">
+                        🥦
+                    </div>
+                    <div class="list-product-name-weight container-col">
+                        <h6 class="list-product-name">Broccoli</h6>
+                        <h6 class="list-product-weight">125g</h6>
+                    </div>
+                    <div class="edit-delete-buttons container-row" style="gap:16px">
+                        <button type="button" class="edit-button button-secondary-outline"><i class="bi bi-pencil"
+                                style="color: var(--color-primary-a90, #000000)"></i>
+                        </button>
+                        <button type="button" class="delete-button button-secondary-outline"><i class="bi bi-trash"
+                                style="color: var(--error)"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- BOTTOM NAVBAR -->
+    <nav class="navbar fixed-bottom">
+        <div class="container-fluid d-flex justify-content-around">
+            <a class="nav-link" href="#">
+                <i class="bi bi-house-door"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a class="nav-link" href="#">
+                <i class="bi bi-book"></i>
+                <span class="nav-text">Recipes</span>
+            </a>
+            <a class="nav-link" href="#">
+                <i class="bi bi-columns-gap"></i>
+                <span class="nav-text">Dashboard</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+</body>
+
+
+</html>

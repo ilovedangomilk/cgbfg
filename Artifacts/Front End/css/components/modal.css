@@ -1,0 +1,49 @@
+.quantity-button {
+    height: 44px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 14px 24px;
+    min-width: 44px;
+    font-size: 15px;
+}
+
+.expiry-container {
+    padding-top: 16px;
+    width: 100%;
+}
+
+.expiry-button {
+    height: 44px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 14px 24px;
+    min-width: 44px;
+    font-size: 15px;
+}
+
+.more-options-button {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.thrown-or-eaten-buttons {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.thrown-button {
+    flex-grow: 1;
+}
+
+.eaten-button {
+    flex-grow: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.delete-button,
+.save-button {
+    flex-grow: 1;
+}

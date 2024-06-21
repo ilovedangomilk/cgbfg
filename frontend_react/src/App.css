@@ -1,0 +1,378 @@
+/* main.css */
+:root {
+  --color-primary-a0: #ffffff;
+  --color-primary-a10: #c5dad0;
+  --color-primary-a20: #8db5a3;
+  --color-primary-a30: #559178;
+  --color-primary-a50: #e0e0e0;
+  --color-primary-a60: #ffffff;
+  --color-primary-a70: #133829;
+  --color-primary-a80: #101f18;
+  --color-primary-a90: #000000;
+  --color-gray-medium: linear-gradient(to left, rgba(89, 89, 89, 0.9), rgba(89, 89, 89, 0.9)),
+      linear-gradient(to left, #0b6e4f, #0b6e4f);
+  --primary: #0B6E4F;
+  --black: #010B08;
+  --grey-medium: #515B58;
+  --error: #C0392B;
+}
+
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #080808;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-background {
+  background-color: #fdf2bc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  position: relative;
+  margin: 10px;
+  padding: 0px;
+  padding-bottom: 150px; /* Adjust this value based on the height of your bottom menu bar */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 100vh; /* Ensure it covers at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  width: 420px;
+  overflow-y: auto; /* Allows scrolling within the container */
+}
+
+.main-content {
+  flex: 1; /* Allows the content area to expand and fill available space */
+  overflow-y: auto; /* Allows scrolling within the content area */
+  /* display: flex; */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  width: 100%; /* Ensure content takes the full width of the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    margin-left: 5px; /* Reset margin on small screens */
+    margin-right: 5px;
+    width: 100%; /* Ensure the container takes full width on small screens */
+  }
+}
+
+.recipe-container {
+  position: relative;
+  margin: 10px;
+  padding: 0px;
+  padding-bottom: 150px; /* Adjust this value based on the height of your bottom menu bar */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 100vh; /* Ensure it covers at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  width: 420px;
+  overflow-y: auto; /* Allows scrolling within the container */
+}
+
+.recipe-content {
+  flex: 1; /* Allows the content area to expand and fill available space */
+  overflow-y: auto; /* Allows scrolling within the content area */
+  /* display: flex; */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  width: 100%; /* Ensure content takes the full width of the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .recipe-container {
+    margin-left: 5px; /* Reset margin on small screens */
+    margin-right: 5px;
+    width: 100%; /* Ensure the container takes full width on small screens */
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', serif;
+  color: #074330;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+
+
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+.hidden { display: none !important; }
+
+
+
+.inventory-item {
+  background-color: var(--color-primary-a0); /* Light background */
+  padding: 10px; /* Increased padding for better spacing */
+  border: 2px solid var(--color-primary-a30); /* Slightly darker border */
+  border-radius: 10px; /* Increased border-radius for smoother corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for a floating effect */
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+.product-title {
+  font-size: 20px; /* Larger font size for the title */
+  font-weight: bold;
+  color: var(--color-primary-a50); /* Darker green for the title */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.product-quantity-container,
+.purchase-dates-container,
+.expiry-dates-container {
+  font-size: 16px; /* Consistent font size */
+  color: var(--black); /* Darker text color for better readability */
+  margin-bottom: 5px; /* Space between details */
+}
+
+.item-actions {
+  margin-top: 10px; /* Space above the action buttons */
+  display: flex;
+  gap: 10px;
+}
+
+.item-actions button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.item-actions button:hover {
+  transform: translateY(-2px);
+}
+
+.use-item-btn {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+}
+
+.use-item-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.delete-item-btn {
+  background-color: #f44336; /* Red background */
+  border: none;
+  color: white;
+}
+
+.delete-item-btn:hover {
+  background-color: #da2c12; /* Darker red on hover */
+}
+
+/* Ensure the grid layout is responsive and looks good */
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* default to two columns */
+  gap: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  column-gap: 10px;
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .inventory-grid {
+      grid-template-columns: repeat(2, 1fr); /* two columns on medium screens */
+  }
+}
+
+@media (min-width: 1201px) {
+  .inventory-grid {
+      grid-template-columns: repeat(3, 1fr); /* three columns on larger screens */
+  }
+}
+
+
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-primary-a50); /* Dark green text */
+}
+
+.product-quantity-container {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.purchase-dates-container,
+.expiry-dates-container {
+  font-size: 14px;
+  color: var(--grey-medium);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bi {
+  margin-right: 5px;
+}
+
+.item-actions button {
+  margin-top: 10px;
+  width: 120px; /* Ensuring consistent width for all buttons */
+}
+
+.use-item-btn {
+  background-color: #4CAF50; /* Green background for action buttons */
+  border-color: #4CAF50;
+}
+
+.use-item-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.delete-item-btn {
+  background-color: #f44336; /* Red background for delete buttons */
+  border-color: #f44336;
+}
+
+.delete-item-btn:hover {
+  background-color: #da2c12; /* Darker red on hover */
+}
+
+
+/* css for filter bar */
+.filter-bar {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: var(--color-primary-a20);
+  text-align: center;
+}
+
+.filter-bar button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  font-size: 24px;
+  background-color: var(--color-primary-a50);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-bar button:hover {
+  background-color: var(--color-primary-a30);
+}
+
+
+/* clock css */
+.clock {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px; /* To ensure the scrollbar does not overlap content */
+}
+
+.filter-container .chakra-stack {
+  display: inline-flex;
+}
+
+.filter-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px; /* To ensure the scrollbar does not overlap content */
+}
+
+.filter-container .chakra-stack {
+  display: inline-flex;
+}
+
+.search-container {
+  margin-bottom: 10px;
+  width: 420px;
+  padding-left:5px;
+  padding-right: 5px;
+  position: relative;
+}
+
+.empty-inventory img {
+  opacity: 0.3;  /* Adjust opacity level between 0 and 1 */
+  width: 100%;   /* Adjust size as needed */
+  height: auto;  /* Maintain aspect ratio */
+}

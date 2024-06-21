@@ -1,0 +1,56 @@
+/* Importing the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.add-item-form-container {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    width: 100%; /* Make width responsive */
+    max-width: 340px; /* Slightly less than .main-container to fit padding */
+}
+
+
+.add-item-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-item-form h2 {
+    margin-bottom: 20px;
+    color: #4A4A4A; /* Dark earthy tone for text */
+    font-size: 24px; /* Larger font for heading */
+    text-align: center; /* Centered heading */
+    font-weight: 500; /* Medium weight for the heading */
+}
+
+.add-item-form label {
+    margin-bottom: 10px;
+    color: #4A4A4A; /* Dark earthy tone for text */
+    font-weight: 400; /* Normal weight for labels */
+}
+
+.add-item-form input,
+.add-item-form select {
+    padding: 10px; /* Increased padding for modern look */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    border: 1px solid #D9CBAA; /* Light earthy tone for border */
+    border-radius: 5px;
+    font-size: 16px; /* Modern font size */
+    color: #4A4A4A; /* Dark earthy tone for text */
+    font-family: 'Roboto', sans-serif; /* Ensure font applies here too */
+}
+
+.add-item-form input:focus,
+.add-item-form select:focus {
+    border-color: #A68A64; /* Focus border color */
+    outline: none; /* Remove default outline */
+}
+

@@ -1,0 +1,70 @@
+.bottom-menu-bar {
+    position: fixed; /* Position relative to main-container */
+    bottom: 0;
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch right to match container width */
+    width: 428px; /* Full width of its parent container */
+    display: flex;
+    justify-content: space-around;
+    background-color: #4A4A4A; /* Dark earthy tone for background */
+    padding: 1vw;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.menu-button {
+    background-color: #D9CBAA; /* Light earthy tone for buttons */
+    color: #4A4A4A; /* Dark earthy tone for text */
+    border: none;
+    border-radius: 25px; /* More rounded corners for a modern look */
+    width: 80px; /* Adjust width as needed */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Light shadow for buttons */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.menu-button:hover {
+    background-color: #B8A584; /* Slightly darker tone on hover */
+}
+
+.middle-button {
+    position: relative;
+    z-index: 10;
+    width: 50px; /* Adjust width as needed */
+}
+
+.floating-buttons {
+    position: absolute;
+    bottom: 100px; /* Increased value to move the buttons higher */
+    display: flex; /* Change to flex to align items horizontally */
+    flex-direction: row; /* Align items side by side */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the buttons are centered within the screen width */
+}
+
+.floating-button-item {
+    background-color: #A68A64; /* Medium earthy tone for floating buttons */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    width: 1000px;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px; /* Add margin for spacing between buttons */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Light shadow */
+    transition: background-color 0.3s ease;
+}
+
+.floating-button-item:hover {
+    background-color: #8D6E4A; /* Slightly darker tone on hover */
+}
